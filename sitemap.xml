@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://12liuheng.github.io/tags/hugo/</loc>
+    <lastmod>2020-03-31T20:09:35+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://12liuheng.github.io/</loc>
     <lastmod>2020-03-31T20:09:35+08:00</lastmod>
   </url>
@@ -13,13 +18,13 @@
   </url>
   
   <url>
-    <loc>https://12liuheng.github.io/2020/03/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://12liuheng.github.io/tags/</loc>
     <lastmod>2020-03-31T20:09:35+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://12liuheng.github.io/2020/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2020-03-31T15:30:24+08:00</lastmod>
+    <loc>https://12liuheng.github.io/2020/03/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2windows/</loc>
+    <lastmod>2020-03-31T20:09:35+08:00</lastmod>
   </url>
   
   <url>
@@ -28,10 +33,6 @@
   
   <url>
     <loc>https://12liuheng.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://12liuheng.github.io/tags/</loc>
   </url>
   
 </urlset>

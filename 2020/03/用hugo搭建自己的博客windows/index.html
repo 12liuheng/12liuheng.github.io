@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.68.3 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="author" content="liu heng">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+
+<meta property="og:description" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用hugo搭建自己的博客(Windows)">
+<meta name="twitter:title" content="用hugo搭建自己的博客(Windows)">
+<meta property="og:url" content="https://12liuheng.github.io/2020/03/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2windows/">
+<meta property="twitter:url" content="https://12liuheng.github.io/2020/03/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2windows/">
+<meta property="og:site_name" content="personal blog">
+<meta property="og:description" content="">
+<meta name="twitter:description" content="">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2020-03-31T20:09:35">
+  
+  
+    <meta property="article:modified_time" content="2020-03-31T20:09:35">
+  
+  
+  
+  
+    
+      <meta property="article:tag" content="Hugo">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=640">
+
+
+    <title>用hugo搭建自己的博客(Windows)</title>
+
+    <link rel="icon" href="https://12liuheng.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://12liuheng.github.io/2020/03/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2windows/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://12liuheng.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://12liuheng.github.io/">personal blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://12liuheng.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://12liuheng.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">liu heng</h4>
+        
+          <h5 class="sidebar-profile-bio">大学生/互联网爱好者</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://12liuheng.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://12liuheng.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://12liuheng.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://12liuheng.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://12liuheng.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/12liuheng" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/636472/kakawait" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://12liuheng.github.io/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-center">
+  
+    <h1 class="post-title" itemprop="headline">
+      用hugo搭建自己的博客(Windows)
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-03-31T20:09:35&#43;08:00">
+        
+  March 31, 2020
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <h1 id="前言">前言</h1>
+<p>这几天研究了一下用Hugo搭建个人博客，并部署在GitHub上。静态网站生成器有很多，像Hexo、Jekyll、Metalsmith等等，那为什么用Hugo呢?最重要的原因还是hugo操作比较简单，配置环境也比较容易,下面是搭建博客的主要流程。</p>
+<h1 id="安装hugo及环境配置">安装Hugo及环境配置</h1>
+<p>在GitHub上安装Hugo最新的<a href="https://github.com/gohugoio/hugo/releases%22Release%22">Release</a>版本。
+将下载好的hugo.exe放在一个文件夹中,例如我存储在<code>E:Hugo\hugo.exe</code>。
+之后设置Windows系统环境变量,在计算机属性中找到<strong>高级系统设置</strong>，之后点击<strong>环境变量</strong>，在<strong>Path</strong>中将hugo.exe的存储路径<code>E:Hugo</code>添加并保存,这样<strong>Hugo</strong>命令就可以使用了。</p>
+<h1 id="验证hugo环境是否配置成功">验证Hugo环境是否配置成功</h1>
+<p>在命令行中输入:</p>
+<pre><code>hugo version
+</code></pre><p>如果显示hugo的版本则说明配置成功，下面我们就可以真正搭建自己的博客啦。</p>
+<h1 id="在本地搭建博客">在本地搭建博客</h1>
+<h2 id="生成站点">生成站点</h2>
+<p>在<code>E:Hugo</code>新建文件夹<code>Site</code>, 在<code>E:\Hugo\Site</code>(其实在哪里创建都可以，为了好找到，在Hugo目录下创建)输入以下命令</p>
+<pre><code>hugo new sit yourblogname
+</code></pre><p><code>yourblogname</code>是你想要创建的网站的名称。
+输入命令后会有以下的文件目录:</p>
+<p>|-<code>archetypes</code>: 存放default.md<br>
+|-<code>content</code>: 你写的博客的存放位置<br>
+|-<code>data</code>: 存放自定义模板，导入的toml文件<br>
+|-<code>layouts</code>: 存放网站的模板文件<br>
+|-<code>static</code>: 存放js/css/img等静态资源<br>
+|-<code>config.toml</code>: 网站的配置文件<br>
+|-<code>themes</code>: 存放下载的主题</p>
+<h2 id="安装主题">安装主题</h2>
+<p>站点生成以后，网站是什么都没有的，因此我们要安装网站的<code>主题</code>。</p>
+<p>Hugo提供了丰富的主题在<a href="https://themes.gohugo.io/%22https://themes.gohugo.io/%22">https://themes.gohugo.io/</a>上。每个主题下方都提供了获取此主题的方式。<br>
+例如<a href="https://themes.gohugo.io/hugo-future-imperfect-slim" title="Hugo Future Imperfect Slim">Hugo Future Imperfect Slim</a>的下载方式：</p>
+<pre><code>git clone https://github.com/pacollins/hugo-future-imperfect-slim.git
+</code></pre><p>在其中我们也可以看见主题的说明还有使用文档。</p>
+<p>将下载好的主题移动到<strong>themes</strong>文件夹中。</p>
+<h2 id="生成网站">生成网站</h2>
+<p>在终端输入以下命令(注意所有操作都在博客的根目录):</p>
+<pre><code>hugo server -t hugo-future-imperfect-slim --buildDrafts
+</code></pre><p>运行成功会出现:</p>
+<pre><code>Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+</code></pre><p>之后在浏览器中输入<strong>localhost:1313</strong>就可以看见自己搭建好的博客网站了。</p>
+<h2 id="写一篇博客">写一篇博客</h2>
+<p>在终端输入:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">hugo <span style="color:#66d9ef">new</span> post<span style="color:#f92672">/</span>test<span style="color:#f92672">.</span><span style="color:#a6e22e">md</span>
+</code></pre></div><p>用Visual Studio Code等编辑器打开test.md，并写点内容:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">---</span>
+title: <span style="color:#e6db74">&#34;我的第一篇博客&#34;</span>
+date: 2020<span style="color:#f92672">-</span>03<span style="color:#f92672">-</span>31T15<span style="color:#f92672">:</span>30<span style="color:#f92672">:</span>24<span style="color:#f92672">+</span>08<span style="color:#f92672">:</span>00
+draft: <span style="color:#66d9ef">true</span>
+<span style="color:#f92672">---</span>
+
+Hello Hugo<span style="color:#f92672">!</span>
+</code></pre></div><p>此时观察网站，发现已经新建了一篇博客。</p>
+<h1 id="将博客部署到github上">将博客部署到GitHub上</h1>
+<p>在GitHub上新建仓库，注意仓库名一定是 <strong>username.github.io</strong>，其中username就是你的用户名。</p>
+<h2 id="生成静态网站">生成静态网站</h2>
+<p>在命令行中输入:</p>
+<pre><code>hugo -t hugo-future-imperfect-slim --baseUrl='https://username.github.io'
+</code></pre><p>此时发现文件目录中生成了<strong>public</strong>文件。</p>
+<h1 id="将生成的文件push到新建仓库中">将生成的文件push到新建仓库中</h1>
+<p>首先进入<strong>public</strong>文件夹,输入以下命令:</p>
+<pre><code>git init
+git add .
+git commit -m 'my first commit'
+git remote add origin https://github.com/username/username.github.io.git
+git push -u origin master
+</code></pre><p>具体的git配置教程和github相关操作在<a href="https://git-scm.com/book/zh/v2">https://git-scm.com/book/zh/v2</a>有详细说明。
+之后就可以在浏览器上访问你自己的博客<strong>username.github.io</strong></p>
+<h1 id="参考内容">参考内容</h1>
+<p><a href="https://www.jianshu.com/p/f1b02e00f206">使用Hugo搭建GitHub个人博客</a>
+<a href="https://www.bilibili.com/video/BV1q4411i7gL">b站作者CodeSheep的教程</a></p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://12liuheng.github.io/tags/hugo/">Hugo</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://12liuheng.github.io/2020/03/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2windows/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://12liuheng.github.io/2020/03/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2windows/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://12liuheng.github.io/2020/03/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2windows/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 liu heng. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://12liuheng.github.io/2020/03/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2windows/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://12liuheng.github.io/2020/03/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2windows/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://12liuheng.github.io/2020/03/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2windows/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F12liuheng.github.io%2F2020%2F03%2F%25E7%2594%25A8hugo%25E6%2590%25AD%25E5%25BB%25BA%25E8%2587%25AA%25E5%25B7%25B1%25E7%259A%2584%25E5%258D%259A%25E5%25AE%25A2windows%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2F12liuheng.github.io%2F2020%2F03%2F%25E7%2594%25A8hugo%25E6%2590%25AD%25E5%25BB%25BA%25E8%2587%25AA%25E5%25B7%25B1%25E7%259A%2584%25E5%258D%259A%25E5%25AE%25A2windows%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2F12liuheng.github.io%2F2020%2F03%2F%25E7%2594%25A8hugo%25E6%2590%25AD%25E5%25BB%25BA%25E8%2587%25AA%25E5%25B7%25B1%25E7%259A%2584%25E5%258D%259A%25E5%25AE%25A2windows%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">liu heng</h4>
+    
+      <div id="about-card-bio">大学生/互联网爱好者</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        a college student
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        China
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://12liuheng.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://12liuheng.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/12liuheng.github.io\/2020\/03\/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2windows\/';
+          
+            this.page.identifier = '\/2020\/03\/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2windows\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'tranquilpeak';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+
